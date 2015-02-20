@@ -8,5 +8,6 @@ breakfast[2]  # bacon
 # breakfast list above:
 
 breakfast[-1]   # toast
-breakfast[2:4]  # ["bacon", "pancakes", "oatmeal"]
+breakfast[2:5]  # ["bacon", "pancakes", "oatmeal"]
+breakfast[-2:]  # ["yogurt", "toast"]
 
