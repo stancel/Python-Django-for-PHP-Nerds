@@ -1,0 +1,3 @@
+* Show the difference between deploy styles
+    * Include how PHP works: compile on each request etc.
+    * Briefly mention how the Python/Django ecosystem hasn't settled
