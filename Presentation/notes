@@ -1,3 +1,8 @@
 * Show the difference between deploy styles
     * Include how PHP works: compile on each request etc.
     * Briefly mention how the Python/Django ecosystem hasn't settled
+* Everything is an object vs. a list of functions
+    * Overriding default object methods > the crazy shit you can do with Python
+        * List-like or dictionary-like objects
+        * Override `__str__` to be anything, including something that isn't a string
+
