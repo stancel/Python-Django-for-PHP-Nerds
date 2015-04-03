@@ -9,7 +9,7 @@
 
     # Except when you're doing something more advanced, then you use a
     # function:
-    
+
     array_slice($breakfast, -1);      # "toast"
     array_slice($breakfast, 2, 3);    # array("bacon", "pancakes", "oatmeal")
     array_slice($breakfast, -2, 2);   # array("yogurt", "toast")
@@ -19,7 +19,7 @@
     # If you want to concatenate arrays, you need a function for that too
     $united_kingdom = array_merge(
         array("England", "Wales"),
-        array("Scottland", "Northern Ireland")
-    );  #  Returns array("England", "Wales", "Scottland", "Northern Ireland")
+        array("Scotland", "Northern Ireland")
+    );  #  Returns array("England", "Wales", "Scotland", "Northern Ireland")
 
 ?>
