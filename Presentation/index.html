@@ -77,30 +77,107 @@
           </section>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
+						<h2>PHP</h2>
+          </section>
+          <section>
+            <ul>
+              <li>Started as a templating language</li>
+              <li>Grew into an international defacto standard</li>
+              <li>Runs pretty much everywhere</li>
+              <li>Weak, dynamic typing</li>
+            </ul>
+            <pre><code class="php">
+              &lt;?php
+
+                "7" + 3 == 10  # TRUE
+
+              ?&gt;
+            </code></pre>
+          </section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg);">
-						</a>
+            <ul>
+              <li>Is being used for things it was never intended for</li>
+              <li>Has some <a href="http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">serious design flaws</a></li>
+              <li>
+                Allows for some really terrible:
+                <ul>
+                  <li>Coding styles</li>
+                  <li>Design methodologies</li>
+                </ul>
+              </li>
+              <li>Lacks a module library</li>
+            </ul>
 					</section>
 				</section>
+
+				<section>
+					<section>
+						<h2>Python</h2>
+          </section>
+					<section>
+            <ul>
+              <li>High-level (slower than C, but MUCH faster to write)</li>
+              <li>Interpreted, but runtime-compiled</li>
+              <li>Consistent behaviour</li>
+              <li>Strong coding standards (white space, pep8)</li>
+              <li>Throws exceptions when you screw up</li>
+              <li>Strong, dynamic typing</li>
+            </ul>
+            <pre><code class="php">
+              #!/usr/bin/env python
+              "7" + 3 == 10  # Raises an exception
+            </code></pre>
+					</section>
+          <section>
+            <p>It's a <a href="https://en.wikipedia.org/wiki/List_of_Python_software">general-purpose language</a></p>
+            <ul>
+              <li>Scientific research (Astropy, SciPy)</li>
+              <li>Data processing (NumPy, Sagan)</li>
+              <li>Visualisations (Matplotlib)</li>
+              <li>Media Managers (Calibre, Quod Libet)</li>
+              <li>Linux package management (Gentoo, Ubuntu)</li>
+              <li>Games (Civilization, Battlefield, Eve Online)</li>
+              <li>Websites (Reddit, The Onion)</li>
+              <li>Services (Dropbox, Trac, App Engine)</li>
+            </ul>
+          </section>
+				</section>
+
+        <section>
+          <h2>Let's Compare</h2>
+        </section>
+
+        <section>
+          <section>
+            <h2>Strings</h2>
+          </section>
+          <section>
+            <h3>PHP</h3>
+            <pre><code class="php">
+  # Your typical starting point
+  print "Hello World\n";
+
+  # Concatenation
+  print "Hello " . "World";
+            </code></pre>
+          </section>
+          <section>
+            <h3>Python</h3>
+            <pre><code class="python">
+  # Your typical starting point
+  print("Hello World")
+
+  # Concatenation
+  print("Hello " + "World")
+
+  # Advanced string formatting
+  print("Hello Agent {number:03d}".format(number=7))
+            </code></pre>
+            <p>Checkout <a href="https://docs.python.org/2/library/string.html#format-specification-mini-language">Python's advanced string formatting</a></p>
+          </section>
+        </section>
 
 				<section>
 					<h2>Slides</h2>
