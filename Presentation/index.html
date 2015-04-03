@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -53,6 +53,7 @@
   					<h2>About Me</h2>
           </section>
           <section>
+  					<h2>About Me</h2>
             <p>
               I've been rolling code professionally for 15+ years
             </p>
@@ -65,6 +66,7 @@
             </ul>
           </section>
           <section>
+  					<h2>About Me</h2>
             <p>
               Now I use my powers for Good: <a href="https://atlas.ripe.net/">RIPE Atlas</a>
             </p>
@@ -82,6 +84,7 @@
 						<h2>PHP</h2>
           </section>
           <section>
+						<h2>PHP</h2>
             <ul>
               <li>Started as a templating language</li>
               <li>Grew into an international defacto standard</li>
@@ -97,6 +100,7 @@
             </code></pre>
           </section>
 					<section>
+						<h2>PHP</h2>
             <ul>
               <li>Is being used for things it was never intended for</li>
               <li>Has some <a href="http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">serious design flaws</a></li>
@@ -107,7 +111,7 @@
                   <li>Design methodologies</li>
                 </ul>
               </li>
-              <li>Lacks a module library</li>
+              <li>Lacks a comprehensive module library</li>
             </ul>
 					</section>
 				</section>
@@ -117,6 +121,7 @@
 						<h2>Python</h2>
           </section>
 					<section>
+						<h2>Python</h2>
             <ul>
               <li>High-level (slower than C, but MUCH faster to write)</li>
               <li>Interpreted, but runtime-compiled</li>
@@ -131,6 +136,7 @@
             </code></pre>
 					</section>
           <section>
+						<h2>Python</h2>
             <p>It's a <a href="https://en.wikipedia.org/wiki/List_of_Python_software">general-purpose language</a></p>
             <ul>
               <li>Scientific research (Astropy, SciPy)</li>
@@ -179,297 +185,277 @@
           </section>
         </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h3>Lists, Tuples, & Arrays</h3>
+          </section>
+          <section>
+            <h3>PHP</h3>
+            <p>It's mostly about functions... mostly.</p>
+            <pre><code class="php">
+  $breakfast = array("eggs", "spam", "bacon", "yogurt", "toast");
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+  $breakfast[0];  # eggs
+  $breakfast[2];  # bacon
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+  array_slice($breakfast, -1);      # "toast"
+  array_slice($breakfast, -2, 2);   # ["yogurt", "toast"]
+  array_push($breakfast, "juice");  # Adds "juice" to the array
+  array_pop($breakfast);            # Pops "juice" off the array
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+  $united_kingdom = array_merge(
+      array("England", "Wales"),
+      array("Scotland", "Northern Ireland")
+  );  # Returns an array of the UK
+            </code></pre>
+          </section>
+          <section>
+            <h3>Python Lists</h3>
+            <p>Everything is an object!</p>
+            <pre><code class="python">
+  breakfast = ["eggs", "spam", "bacon", "yogurt", "toast"]
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+  breakfast[0]               # eggs
+  breakfast[2]               # bacon
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+  breakfast[-1]              # toast
+  breakfast[-2:]             # ["yogurt", "toast"]
+  breakfast.append("juice")  # Adds "juice" to the list
+  breakfast.pop()            # Pops "juice" off the list
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+  united_kingdom = ["England", "Wales"] + ["Scotland",
+      "Northern Ireland"]  # Returns an array of the UK
+            </code></pre>
+          </section>
+          <section>
+            <h3>Python Tuples</h3>
+            <p>Immutably precarious</p>
+            <pre><code class="python">
+  breakfast = ("eggs", "spam", "bacon", "yogurt", "toast")
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+  breakfast[0]               # eggs
+  breakfast[2]               # bacon
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+  breakfast[-1]              # toast
+  breakfast[-2:]             # ["yogurt", "toast"]
+  breakfast.append("juice")  # Exception!
+  breakfast.pop()            # Exception!
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+  united_kingdom = ["England", "Wales"] + ["Scotland",
+      "Northern Ireland"]  # Returns an array of the UK
+            </code></pre>
+          </section>
+        </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+        <section>
+          <section>
+            <h3>Dictionaries and Referenced Arrays</h3>
+          </section>
+          <section>
+            <h3>PHP</h3>
+            <p>We reuse the <code>array()</code> function here</p>
+            <pre><code class="php">
+  $countries = array(
+      "Paris" => "France",
+      "Athens" => "Greece",
+      "Warsaw" => "Poland",
+  );
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
+  print $characters["Greece"];
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+  array_keys($characters);
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
+  $characters["Rome"] = "Italy"
+            </code></pre>
+          </section>
+          <section>
+            <h3>Python</h3>
+            <p>Dictionaries are an entirely different construct</p>
+            <pre><code class="python">
+  countries = {
+      "Paris": "France",
+      "Athens": "Greece",
+      "Warsaw": "Poland",
   }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+  print characters["Greece"]
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+  characters.keys()
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
+  countries[["Amsterdam", "Den Haag"]] = "Netherlands"
+            </code></pre>
+          </section>
+        </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+        <section>
+          <section>
+            <h3>Objects</h3>
+          </section>
+          <section>
+            <h3>PHP</h3>
+            <p>Objects were a late-to-the-party addition</p>
+            <pre><code class="php">
+  class Cake {
+      public $flavour;
+      public $icing;
+      private $temperature;
+      function __construct($flavour, $icing) {
+          $this->flavour = $flavour;
+          $this->icing = $icing;
+          $this->temperature = 22;
+      }
+      public function bake(){
+          while ($this->temperature < 180) {
+              $this->temperature++;
+          }
+      }
+  }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Python</h3>
+            <p>Objects were part of Python from the beginning</p>
+            <pre><code class="python">
+  class Cake(object):
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+      def __init__(self, flavour, icing):
+          self.flavour = flavour
+          self.icing = icing
+          self._temperature = 22
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+      def bake(self):
+          while self._temperature < 180:
+              self._temperature += 1
+            </code></pre>
+          </section>
+        </section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+        <section>
+          <section>
+            <h3>Packaging and Namespacing</h3>
+          </section>
+          <section>
+            <h3>PHP</h3>
+            <p>
+              Use of <code>include</code> or <code>require</code> simply injects
+              that code into the running environment.
+            </p>
+            <pre><code class="php">
+  # variables.php
+  $favourite_colour = "blue";
+  $favourite_food = "cake";
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+  # myscript.php
+  require("variables.php");
+  print $favourite_food;  # "cake"
+            </code></pre>
+          </section>
+          <section>
+            <h3>Python</h3>
+            <p>Packages are isolated from each other</p>
+            <pre><code class="python">
+  # variables.py
+  favourite_colour = "blue"
+  favourite_food = "cake"
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+  # myscript.py
+  import variables
+  print(favourtie_food)  # Exception!
+  print(variables.favourite_food)  # "cake"
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+  # myotherscript.py
+  from variables import favourite_colour
+  print(favourite_colour)  # "blue"
+            </code></pre>
+          </section>
+        </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h2>Crazy-Awesome Things About Python</h2>
+          </section>
+          <section>
+            <h2>Kwargs</h2>
+            <p>Python lets you pass in keyword arguments</p>
+            <pre><code class="python">
+  bikes = {  # Maps bike style to range
+    "touring": 100,
+    "mountain": 50,
+    "road": 25,
+    "amsterdammer": 10
+  }
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+  def ride_bike(person, style="mountain"):
+      person.distance_travelled += bikes[style]
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+  ride_bike(User("Daniel"), style="amsterdammer")
+            </code></pre>
+          </section>
+          <section>
+            <h2>-Like Classes</h2>
+            <p>You can create objects that <em>act</em> like primitives.</p>
+            <ul>
+              <li>A list-like object that pages through a data-store</li>
+              <li>A dictionary-like object that references Memcache</li>
+              <li>A string-like object that when capitalised, makes toast.</li>
+            </ul>
+            <p>You can even subclass primitives for this purpose!</p>
+          </section>
+          <section>
+            <h2>Modules</h2>
+            <p>
+              Python isn't very useful on it's own. The power is in its
+              <strong>massive</strong> module library:
+            </p>
+            <ul>
+              <li>os, sys</li>
+              <li>hashlib</li>
+              <li>re</li>
+              <li>markdown</li>
+              <li>celery</li>
+              <li>Django</li>
+              <li>...and many, many more</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Django</h2>
+            <p>The web framework for perfectionists with deadlines</p>
+          </section>
+          <section>
+            <h2>Django</h2>
+            <ul>
+              <li>Started as a means to maintain an online news site</li>
+              <li>
+                The big kid on the web frameworks block
+                <ul>
+                  <li>Alternatives: web2py, Flask, Pyramid, Plone, etc.</li>
+                </ul>
+              </li>
+              <li>Makes doing web stuff easy in Python</li>
+              <li>Batteries included: templating, localisation, etc.</li>
+              <li>Gets out of the way when you want it to</li>
+              <li>Has the coolest mascot ev-ar</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Django</h2>
+            <p>Powers a long list of prominent sites and services, including:</p>
+            <ul>
+              <li>Disqus</li>
+              <li>Pinterest</li>
+              <li>Bitbucket</li>
+              <li>Instagram</li>
+              <li>Mozilla</li>
+            </ul>
+          </section>
+        </section>
+
+
+
+
 
 			</div>
 

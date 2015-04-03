@@ -82,7 +82,7 @@ Modules
 [example]
 
 Django
-* Started as a
+* Started as a means to maintain an online news site
 * The big kid on the web frameworks block
     * Alternatives: web2py, Flask, Pyramid, Plone, etc.
 * Makes doing web stuff easy in Python
