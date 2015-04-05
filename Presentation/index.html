@@ -1,37 +1,37 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Python &amp; Django for PHP Nerds</title>
+    <title>Python &amp; Django for PHP Nerds</title>
 
-		<meta name="description" content="A breakdown of what's different and why Django is amazeballs">
-		<meta name="author" content="Daniel Quinn">
+    <meta name="description" content="A breakdown of what's different and why Django is amazeballs">
+    <meta name="author" content="Daniel Quinn">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
     <style>
       .reveal pre code {
@@ -44,20 +44,20 @@
 
     <link rel="stylesheet" href="contrib/font-awesome-4.3.0/css/font-awesome.min.css">
 
-	</head>
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
           <br />
           <br />
-					<h1>Python &amp; Django</h1>
+          <h1>Python &amp; Django</h1>
           <h3>For PHP Nerds</h3>
-					<p><small>
+          <p><small>
             Created by Daniel Quinn<br />
             <br />
             <i class="fa fa-twitter"></i> &nbsp; @searchingfortao
@@ -70,14 +70,14 @@
           <p><small>
             DjangoCon EU, Cardiff, 2015
           </small></p>
-				</section>
+        </section>
 
-				<section>
+        <section>
           <section>
-  					<h2>About Me</h2>
+            <h2>About Me</h2>
           </section>
           <section>
-  					<h2>About Me</h2>
+            <h2>About Me</h2>
             <p>
               I've been rolling code professionally for 15+ years
             </p>
@@ -90,7 +90,7 @@
             </ul>
           </section>
           <section>
-  					<h2>About Me</h2>
+            <h2>About Me</h2>
             <p>
               Now I use my powers for Good: <a href="https://atlas.ripe.net/">RIPE Atlas</a>
             </p>
@@ -101,14 +101,14 @@
               <li>Thousands of nodes</li>
             </ul>
           </section>
-				</section>
+        </section>
 
-				<section data-background="img/php.png">
-					<section>
-						<h2>PHP</h2>
+        <section data-background="img/php.png">
+          <section>
+            <h2>PHP</h2>
           </section>
           <section>
-						<h2>PHP</h2>
+            <h2>PHP</h2>
             <ul>
               <li>Started as a templating language</li>
               <li>Grew into an international defacto standard</li>
@@ -123,8 +123,8 @@
               ?&gt;
             </code></pre>
           </section>
-					<section>
-						<h2>PHP</h2>
+          <section>
+            <h2>PHP</h2>
             <ul>
               <li>Is being used for things it was never intended for</li>
               <li>Has some <a href="http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">serious design flaws</a></li>
@@ -137,15 +137,15 @@
               </li>
               <li>Lacks a comprehensive module library</li>
             </ul>
-					</section>
-				</section>
-
-				<section data-background="img/python.png">
-					<section>
-						<h2>Python</h2>
           </section>
-					<section>
-						<h2>Python</h2>
+        </section>
+
+        <section data-background="img/python.png">
+          <section>
+            <h2>Python</h2>
+          </section>
+          <section>
+            <h2>Python</h2>
             <ul>
               <li>High-level (slower than C, but MUCH faster to write)</li>
               <li>Interpreted, but runtime-compiled</li>
@@ -158,9 +158,9 @@
               #!/usr/bin/env python
               "7" + 3 == 10  # Raises an exception
             </code></pre>
-					</section>
+          </section>
           <section>
-						<h2>Python</h2>
+            <h2>Python</h2>
             <p>It's a <a href="https://en.wikipedia.org/wiki/List_of_Python_software">general-purpose language</a></p>
             <ul>
               <li>Scientific research (Astropy, SciPy)</li>
@@ -177,7 +177,7 @@
             <h2>Python</h2>
             <p>A note about 2 vs. 3</p>
           </section>
-				</section>
+        </section>
 
         <section>
           <h2>Let's Compare</h2>
@@ -502,39 +502,39 @@
           <p>Maybe we should try writing some stuff</p>
         </section>
 
-			</div>
+      </div>
 
-		</div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				transition: 'convex', // none/fade/slide/convex/concave/zoom
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
         backgroundTransition: 'zoom',
         loop: true,
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
