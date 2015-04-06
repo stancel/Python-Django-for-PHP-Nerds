@@ -151,6 +151,7 @@
               <li>Interpreted, but runtime-compiled</li>
               <li>Consistent behaviour</li>
               <li>Strong coding standards (white space, pep8)</li>
+              <li>No semicolons!</li>
               <li>Throws exceptions when you screw up</li>
               <li>Strong, dynamic typing</li>
             </ul>
@@ -226,15 +227,15 @@
   $breakfast[0];  # eggs
   $breakfast[2];  # bacon
 
-  array_slice($breakfast, -1);      # "toast"
-  array_slice($breakfast, -2, 2);   # ["yogurt", "toast"]
-  array_push($breakfast, "juice");  # Adds "juice" to the array
-  array_pop($breakfast);            # Pops "juice" off the array
+  array_slice($breakfast, -1);      // "toast"
+  array_slice($breakfast, -2, 2);   // ["yogurt", "toast"]
+  array_push($breakfast, "juice");  // Adds "juice" to the array
+  array_pop($breakfast);            // Pops "juice" off the array
 
   $united_kingdom = array_merge(
       array("England", "Wales"),
       array("Scotland", "Northern Ireland")
-  );  # Returns an array of the UK
+  );  // Returns an array of the UK
             </code></pre>
           </section>
           <section data-background="img/python.png">
@@ -289,11 +290,11 @@
       "Warsaw" => "Poland",
   );
 
-  print $characters["Greece"];
+  print $countries["Athens"];  // Greece
 
-  array_keys($characters);
+  array_keys($countries);
 
-  $characters["Rome"] = "Italy"
+  $countries["Rome"] = "Italy"
             </code></pre>
           </section>
           <section data-background="img/python.png">
@@ -306,9 +307,9 @@
       "Warsaw": "Poland",
   }
 
-  print characters["Greece"]
+  print countries["Athens"]  # Greece
 
-  characters.keys()
+  countries.keys()
 
   countries[["Amsterdam", "Den Haag"]] = "Netherlands"
             </code></pre>
@@ -436,6 +437,25 @@
             </code></pre>
           </section>
           <section>
+            <h2>List Comprehensions</h2>
+            <p>Generate a list from another list, in one line</p>
+            <pre><code class="python">
+  # We start with a list of countries
+  countries = [
+      "Canada", "Greece", "Romania", "Korea", "Australia",
+      "Columbia", "Vietnam", "Egypt", "South Sudan", "Mexico"
+  ]
+
+  # We generate from that, a list of first letters
+  first_letters = []
+  for country in countries:
+      first_letters.append(country[0])
+
+  # But you could have just as easily done this:
+  first_letters = [country[0] for country in countries]
+            </code></pre>
+          </section>
+          <section>
             <h2>-Like Classes</h2>
             <p>You can create objects that <em>act</em> like primitives.</p>
             <ul>
@@ -498,8 +518,16 @@
         </section>
 
         <section data-background="img/alot.png">
-          <h2>This is a lot of slides</h2>
+          <h2>
+            <br />
+            This is a lot of slides
+          </h2>
           <p>Maybe we should try writing some stuff</p>
+          <p>
+            <br />
+            http://goo.gl/uAczYj<br />
+            <img src="img/qr/repo.png" />
+          </p>
         </section>
 
       </div>

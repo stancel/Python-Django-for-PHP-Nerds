@@ -1,3 +1,7 @@
+#
+# In Python's print() function, the "\n" is implied.
+#
+
 # Your typical starting point
 print("Hello World")
 
