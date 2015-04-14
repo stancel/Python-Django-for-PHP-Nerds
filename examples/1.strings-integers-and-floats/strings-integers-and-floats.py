@@ -22,7 +22,7 @@ print("hello"[2])    # Prints "l"
 print("hello"[-1])   # Prints "o"
 print("hello"[-2:])  # Prints "lo"
 
-# Remember that you Python doesn't think for you when you try to mix strings and
+# Remember that Python doesn't think for you when you try to mix strings and
 # non-strings.  For example, this will explode with a TypeError exception:
 
 print("Hello Agent 00" + 7)
@@ -47,14 +47,14 @@ print("Hello Agent {number:03d}".format(number=7))
 # casting functions to change the nature of your objects.
 #
 
-# This will fail
-print("7" * 3)  # TypeError
+# The result of this might surprise you
+print("7" * 3)  # "777" or rather, "the string '7' repeated 3 times"
 
-# This is just fine though, because we cast the string as an int
-print(int("7") * 3)
+# Do do some math though, we cast the string as an int
+print(int("7") * 3)  # 21
 
 # Same goes if you want to concatenate "3" to the "7":
-print("7" + str(3))  # TypeError
+print("7" + str(3))  # "73"
 
 # You would normally use these functions on variables of course, as one-part
 # variable sanitisation and one-part casting for use in your program:
