@@ -37,6 +37,7 @@ print("Hello Agent {}".format(7))
 # beyond the scope of this tutorial, but if you're curious:
 
 # https://docs.python.org/2/library/string.html#format-specification-mini-language
+# http://pyformat.info/
 print("Hello Agent {number:03d}".format(number=7))
 
 #
