@@ -17,6 +17,17 @@ Our tutorial on the Open Day will only be 3 hours long, so I'll do my best to
 keep parts 1-3 limited to the first half, leaving you to experiment through the
 tutorial and beyond for the latter half.
 
+## Agenda
+
+* 11:00 - 11:30  Welcome & Presentation
+* 11:30 - 12:00  Examples & Exercises
+* 12:00 - 13:00  The Django Tutorial
+
+Depending on how we do for time, we may not get through the whole Django
+tutorial, but that's ok.  The idea behind this session is to get you well on
+your way from PHP to Python and feel comfortable with a Python framework like
+Django.
+
 ## Further References & Development
 
 Django is pretty awesome, and once you get the hang of it *so easy* to rapidly
