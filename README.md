@@ -13,7 +13,7 @@ The recommended way to use this tutorial is:
 4. Go to the [Django website](https://djangoproject.com/) and do the
    [tutorial](https://docs.djangoproject.com/en/1.8/intro/).
 
-Our tutorial on the Open Day will only be 3 hours long, so I'll do my best to
+Our tutorial on the Open Day will only be 2 hours long, so I'll do my best to
 keep parts 1-3 limited to the first half, leaving you to experiment through the
 tutorial and beyond for the latter half.
 
