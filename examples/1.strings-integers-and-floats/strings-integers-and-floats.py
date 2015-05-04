@@ -22,6 +22,11 @@ print("hello"[2])    # Prints "l"
 print("hello"[-1])   # Prints "o"
 print("hello"[-2:])  # Prints "lo"
 
+# Multiline comments make use of the special triple-quote (""") syntax:
+print("""This is my multiline string. It's handy for large blocks of text,
+because you can use "quotes" in them without worrying about having to escape
+anything.""");
+
 # Remember that Python doesn't think for you when you try to mix strings and
 # non-strings.  For example, this will explode with a TypeError exception:
 
@@ -32,6 +37,13 @@ print("Hello Agent 00" + 7)
 
 print("Hello Agent 00" + str(7))
 print("Hello Agent {}".format(7))
+
+# Since Python doesn't make use of special syntax (like PHP's "$"), there's no
+# way to handle interpolated strings in Python.  Instead, we use the .format()
+# method.
+
+favourite_colour = "green"
+print("My favourite colour is {}".format(green))
 
 # The use of .format() leads to the topic of advanced string formatting.  It's
 # beyond the scope of this tutorial, but if you're curious:
