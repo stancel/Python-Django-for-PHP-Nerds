@@ -1,4 +1,6 @@
-# DjangoCon Europe 2015: Python & Django for PHP Nerds
+# Python & Django for PHP Nerds
+
+*(A workshop for DjangoCon Europe, 2015)*
 
 This repo contains all resources required for my tutorial teaching PHP nerds how
 to Python.  Standalone, the presentation probably isn't much use, but the 
@@ -30,11 +32,11 @@ Django.
 
 ## Further References & Development
 
-Django is pretty awesome, and once you get the hang of it *so easy* to rapidly
-develop and deploy.  If you'd like to advance further down your path toward a
-life of Python & Django, I would recommend starting with a small project and
-restricting yourself to solving typical problems with Python instead of the
-tools you might be more comfortable with.
+Django is pretty awesome, and once you get the hang of it, it's *so easy* to 
+rapidly develop and deploy.  If you'd like to advance further down your path
+toward a life of Python & Django, I would recommend starting with a small
+project and restricting yourself to solving typical problems with Python
+instead of the tools you might be more comfortable with.
 
 In terms of where to find more help in advancing your skills, that really
 depends on your learning style preference.
