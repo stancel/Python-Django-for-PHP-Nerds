@@ -58,8 +58,8 @@ class SkilledPerson(Person):
         aren't immediately interested in into a container that can be passed
         around.  In this case, SkilledPerson is only interested in the attribute
         skill_level, but its parent class, Person probably wants other stuff.
-        We use this variables to pass "all the things" passed to the constructor
-        up to the parent class without having to know what they are.
+        We use these variables to pass "all the things" passed to the
+        constructor up to the parent class without having to know what they are.
 
         In other words, this method could have just as easily been written as:
 
@@ -93,7 +93,7 @@ class Hacker(SkilledPerson):
     def __init__(self, kungfoo=None, *args, **kwargs):
         """
         Same as above, only we're going to sort the list of kungfoo skills since
-        that's just nicer.
+        that's prettier.
         """
         SkilledPerson.__init__(self, *args, **kwargs)
         self.kungfoo = sorted(kungfoo)
@@ -133,7 +133,7 @@ class Chef(SkilledPerson):
         return random.choice(self.specialties)
 
 
-# And now, all of these "tests" should pass!
+# And now, all of these tests should pass!
 
 sarah = Hacker(
     name="Sarah",
@@ -175,3 +175,4 @@ sarah.add_kungfoo("Java")
 assert sarah.kungfoo == ["Java", "PHP", "Perl", "Python"]
 
 print("All tests passed!")
+
