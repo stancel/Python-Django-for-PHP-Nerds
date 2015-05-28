@@ -3,8 +3,8 @@
 # We need the sys module, because it has access to the arguments list (argv)
 import sys
 
-# Test the length of the list to make sure there's at lest 2 arguments. Like in
-# Perl, 0 is the name of the script being executed.
+# Test the length of the list to make sure there's at lest 2 arguments. Just
+# like in PHP, 0 is the name of the script being executed.
 if len(sys.argv) > 1:
     # You access the argument we want with [1] and concatenate it to the
     # "Hello " string, passing all of this to print().  A "\n" is implied.
