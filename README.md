@@ -9,7 +9,7 @@ understanding Python -- so long as they've got something of a PHP background.
 
 The recommended way to use this tutorial is:
 
-1. Know PHP
+1. Know PHP.
 2. Try out the [examples](https://github.com/danielquinn/Python-Django-for-PHP-Nerds/tree/master/examples/)
    (following along with the presentation if you like).
 3. Do the [exercises](https://github.com/danielquinn/Python-Django-for-PHP-Nerds/tree/master/exercises/)
