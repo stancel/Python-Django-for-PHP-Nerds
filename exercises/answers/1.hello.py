@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # We need the sys module, because it has access to the arguments list (argv)
 import sys

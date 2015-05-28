@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # We need the random module to make an easy selection, and sys to get arguments.
 import random

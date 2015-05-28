@@ -1,4 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#
+# That coding: line is part of the ugly that is python2, where there was no
+# implicit encoding for Python files.  Since this file contains a non-ASCII
+# character, this line is required to make Python not explode.
+#
+# This is one of the big reasons why you should be using Python 3.
+#
 
 # We need random for our get_random_skill() methods
 import random
@@ -89,7 +98,7 @@ class Hacker(SkilledPerson):
     """
     We're now a subclass of a subclass.
     """
-    
+
     def __init__(self, kungfoo=None, *args, **kwargs):
         """
         Same as above, only we're going to sort the list of kungfoo skills since
@@ -102,7 +111,7 @@ class Hacker(SkilledPerson):
         """
         This is a slick way to make sure that any additions to a list are kept
         unique:
-        
+
         1. Add the object to the list by concatenating the lists together (you
            can also use .append() but this works on one line nicely
         2. Turn that new list into a set with set().  Sets don't allow for
@@ -111,7 +120,7 @@ class Hacker(SkilledPerson):
         4. Sort the list with sorted() because that's nicer.
         """
         self.kungfoo = sorted(list(set(self.kungfoo + [kungfoo])))
-    
+
     def get_random_skill(self):
         """
         Since self.kungfoo is just a list, random.choice() works nicely.
@@ -124,11 +133,11 @@ class Chef(SkilledPerson):
     Chef is a sibling to Hacker, a child to SkilledPerson, and a grandchild to
     Person.
     """
-    
+
     def __init__(self, specialties, *args, **kwargs):
         SkilledPerson.__init__(self, *args, **kwargs)
         self.specialties = specialties
-    
+
     def get_random_skill(self):
         return random.choice(self.specialties)
 
