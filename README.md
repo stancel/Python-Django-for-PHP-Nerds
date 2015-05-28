@@ -10,8 +10,10 @@ understanding Python -- so long as they've got something of a PHP background.
 The recommended way to use this tutorial is:
 
 1. Know PHP
-2. Try out the examples (following along with the presentation if you like)
-3. Do the exercises in order
+2. Try out the [examples](https://github.com/danielquinn/Python-Django-for-PHP-Nerds/tree/master/examples/)
+   (following along with the presentation if you like).
+3. Do the [exercises](https://github.com/danielquinn/Python-Django-for-PHP-Nerds/tree/master/exercises/)
+   in order.
 4. Go to the [Django website](https://djangoproject.com/) and do the
    [tutorial](https://docs.djangoproject.com/en/1.8/intro/).
 
@@ -41,8 +43,8 @@ instead of the tools you might be more comfortable with.
 In terms of where to find more help in advancing your skills, that really
 depends on your learning style preference.
 
-* For those who like IRC, #django on Freenode is always busy
-* For those who like books, there's [Dive into Python](http://www.diveinto.org/python3/) and [Two Scoops of Django](http://twoscoopspress.org/products/), both generally regarded as authoritative books on their respecive topics.
+* For those who like IRC, #django on Freenode is always busy.
+* For those who like books, there's [Dive into Python](http://www.diveinto.org/python3/) and [Two Scoops of Django](http://twoscoopspress.org/products/), both generally regarded as authoritative books on their respective topics.
 * For the redditors, there's [/r/learnpython](https://www.reddit.com/r/learnpython) and [/r/django](https://www.reddit.com/r/django).
 * And then of course there's always a DjangoCon in [Europe](http://djangocon.eu/) and [North America](http://djangocon.us/).
 
