@@ -11,6 +11,6 @@ them in a program that understands how to highlight the syntax of these two
 languages, so I recommend you either (a) view them in your code editor, or (b)
 view them on GitHub.
 
-Section *basic/08. Modules* is simply a markdown (`.md`) file, and GitHub will
+Basic section *08: Modules* is simply a markdown (`.md`) file, and GitHub will
 handle the formatting for that as well.  Of course it's still quite readable in
 a text editor though.
