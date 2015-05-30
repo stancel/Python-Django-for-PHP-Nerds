@@ -563,6 +563,30 @@
           </section>
         </section>
 
+        <section data-background="img/pony.png">
+          <section>
+            <h2>How is Django Different from PHP?</h2>
+            <p>It's a little more complicated, but also cleaner.</p>
+          </section>
+          <section>
+            <h2>In PHP Land</h2>
+            <ul>
+              <li>The <code>DOCUMENT_ROOT</code> is a thing</li>
+              <li>You use Apache or nginx to route all requests through a script</li>
+            </ul>
+          </section>
+          <section>
+            <h2>In Django Land <small>(and others)</small></h2>
+            <p>Your webserver routes traffic to a socket or port.  Your application:</p>
+            <ul>
+              <li>Is simply a process that handles requests</li>
+              <li>Has no concept of "files requested"</li>
+              <li>Instead there's a request and the appserver generates a response</li>
+              <li>Static files are typically handled elsewhere (CDN)</li>
+            </ul>
+          </section>
+        </section>
+
         <section data-background="img/alot.png">
           <h2>
             <br />
