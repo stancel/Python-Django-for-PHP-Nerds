@@ -62,7 +62,7 @@ def alternate_get_message(person):
 
 
 # .keys() returns all of the keys from a dictionary
-acceptable_people = people.keys()
+acceptable_people = list(people.keys())  # Python3 returns dict_keys here, rather than a plain list.
 
 if not len(sys.argv) == 2:
     # For our random selection, we use random.choice() which returns a random
