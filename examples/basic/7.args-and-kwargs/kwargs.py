@@ -48,8 +48,8 @@ my_generic_kwarg_function(
     favourite="Python",
 )
 
-# Note that you cal also pass arguments with **.  The code below passes the 3
-# keyword argument in my_dict as separate keyword arguments:
+# Note that you can also pass arguments with **.  The code below passes the 3
+# keyword arguments in my_dict as separate keyword arguments:
 
 my_dict = {"first": "C", "second": "PHP", "third": "Python"}
 my_explicit_kwarg_function(**my_dict)
