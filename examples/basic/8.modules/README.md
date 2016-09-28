@@ -2,12 +2,11 @@
 
 The real power of Python is in the module library.  Many modules come bundled
 with Python, and there are literally thousands of useful modules available to
-you simply by typing:
-
-    pip install module_name
+you simply importing it.
 
 ## Some built-ins to get you started
 
+These all ship with Python, so using them is easy.
 
 ### os
 
@@ -59,7 +58,14 @@ https://docs.python.org/3/library/re.html
 ## Some publicly-available packages
 
 As I said, there are literally *thousands* of excellent Python packages
-available to you, but here's a sample.
+available to you.  However to get anything that's not already part of the
+standard library, you'll have to install it with `pip`:
+
+```bash
+pip install module_name
+```
+
+Here's a sample of some of the useful packages out there:
 
 
 ### dateutil, arrow, delorean
@@ -87,6 +93,11 @@ Parse markdown content (like this file) into various formats, all within your
 program.
 
 https://pypi.python.org/pypi/Markdown
+
+### Requests
+
+Easy URL request handling: authentication, parsing JSON, you name it, it's
+made simple.
 
 ### Celery
 
