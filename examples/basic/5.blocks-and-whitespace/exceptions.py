@@ -35,7 +35,7 @@ finally:
 print("Hello World")
 
 #
-# As I said above, Python's exception handling is a lot more powerful that what
+# As I said above, Python's exception handling is a lot more powerful than what
 # you might be used to in PHP.  You can make use of standard exceptions like
 # ZeroDivisionError, IndexError, or ValueError, or create your own exceptions
 # for whatever purpose you like.
