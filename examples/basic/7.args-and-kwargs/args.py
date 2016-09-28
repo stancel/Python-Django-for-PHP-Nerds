@@ -5,8 +5,8 @@
 #
 
 #
-# This probably what you're used to.  A function had 3 arguments, and you must
-# pass in all three for the function to work
+# This is probably what you're used to.  If a function had 3 arguments, and you
+# must pass in all three for the function to work
 #
 def my_explicit_arg_function(first, second, third):
     print("These are my arguments: {}, {}, {}".format(
@@ -35,7 +35,7 @@ def my_generic_arg_function(*args):
 my_generic_arg_function("cake", "pizza", "ice cream", "doughnuts")
 my_generic_arg_function("cake")
 
-# Note that you cal also pass arguments with *.  The code below passes the 3
+# Note that you can also pass arguments with *.  The code below passes the 3
 # arguments in my_list as separate arguments:
 
 my_list = ["cake", "pizza", "ice cream"]
