@@ -6,9 +6,9 @@
 
 # Important note: imports ALWAYS go at the top of the file.  Python will let you
 # get away with importing stuff anywhere (even inside a function), but it's
-# generally considered bad practise since it makes your program harder to
+# generally considered bad practice since it makes your program harder to
 # understand.
 import variables
 
-print(favourtie_food)  # Exception!
+print(favourite_food)  # Exception!
 print(variables.favourite_food)  # "cake"
