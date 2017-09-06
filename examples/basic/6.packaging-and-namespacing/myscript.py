@@ -10,5 +10,6 @@
 # understand.
 import variables
 
-print(favourtie_food)  # Exception!
+
+print(favourite_food)  # Exception!
 print(variables.favourite_food)  # "cake"
